@@ -1,7 +1,6 @@
 ![SysOP](Resources/ScreenSysOp.png)
-# Interprocess Communication
-This code implements a communication system between two processes using sockets, with synchronization managed by vector clocks. In this system, the processes exchange messages over a network, where sockets serve as the communication channel, facilitating the transmission of data. Vector clocks, a key mechanism in distributed systems, are used to maintain the logical ordering of events across the processes. Each process maintains a vector timestamp that tracks the causal relationships between events in the system, ensuring that message delivery follows a consistent order, even in the absence of a global clock. This allows the system to detect and handle concurrency and causality violations, ensuring synchronized communication and correct message sequencing.
-
+# Ricart-Agrawala Algorithm
+This code implements a simulated version of the Ricart-Agrawala mutual exclusion algorithm, which is a distributed method for ensuring exclusive access of processes to a critical section in distributed systems. The algorithm uses inter-process messages to coordinate access and avoid conflicts, relying on a request and defer policy. Through this mechanism, processes exchange access requests that are ordered to ensure that only one process enters the critical section at a time, promoting efficient synchronization and minimizing the number of required messages.
 ## 1. Steps to Install:
 
 
@@ -13,7 +12,7 @@ This code implements a communication system between two processes using sockets,
    ```
 ### 2. Installation of application and internal dependencies
 
-    git clone https://github.com/kayua/VectorialClock-SysOp.git
+    git clone https://github.com/kayua/Ricart-Agrawala-Algorithm.git
     pip install -r requirements.txt
 
    
