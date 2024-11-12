@@ -22,27 +22,19 @@ This code implements a simulated version of the Ricart-Agrawala mutual exclusion
 ### 1. Run (main.py) Server Mode
     
     python3 main.py (arguments)
-    Example: python3 main.py --process_id (ID Process) --listen_port 5050 --send_port 5050 --flask_port 5000 --address (IP Address)
+    Example: python3 main.py --node_id (IP Address) --port (Port Number)
     
 
 ### Input parameters:
 
     Arguments:
+        --node_id               ID of the current node.
+        --ip                    IP of the current node.
+        --port                  Port of the current node.
+        --config_path           Path to the JSON configuration file for nodes.
 
-        --process_id            Process ID ()
-        --number_processes      Number of processes
-        --listen_port           Listening message port
-        --send_port             Sending message port 
-        --max_delay             Maximum delay communication
-        --max_retries           Maximum retries message send
-        --address               Local IP Address
-        --flask_port            Flask port for frontend/backend communication
     --------------------------------------------------------------
 
-
-## 3. Implemented semantics
-
-![Execution](Resources/execution.png)
 
 ## 4. Requirements:
 
