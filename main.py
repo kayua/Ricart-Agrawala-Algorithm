@@ -16,11 +16,11 @@ try:
     import logging
     import argparse
 
-    from View import View
+    from Components.View import View
 
     from datetime import datetime
     from logging.handlers import RotatingFileHandler
-    from RicartAgrawalaNode import RicartAgrawalaNode
+    from Components.RicartAgrawalaNode import RicartAgrawalaNode
 
 except ImportError as error:
 
